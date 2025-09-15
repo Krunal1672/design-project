@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD App</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <h2>Employee Management</h2>
+  <form action="#" method="post" name="frm">
+    <input type="hidden" name="id" id="id">
+    <label>Name:</label>
+    <input type="text" name="name" id="name" required><br>
+    <label>Age:</label>
+    <input type="number" name="age" id="age" required><br>
+    <label>Salary:</label>
+    <input type="number" name="salary" id="salary" required><br>
+    <input type="button" value="Save Data" onclick="saveData()">
+  </form>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Salary</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="alldata"></tbody>
+  </table>
+
+  <script src="crud.js"></script>
+</body>
+</html>
